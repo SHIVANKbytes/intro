@@ -1,0 +1,65 @@
+#h1{
+    margin-top: 10vh;
+    border: 2px solid;
+    color: aliceblue;
+    background-color: blue;
+    text-size-adjust: 18px;
+}
+
+#h3{
+    margin: bottem-left;
+}
+
+body{
+    background-image: url("https://dev.infiniticreation.co.uk/wp-content/uploads/2018/06/background-kupi-contact-form.png");
+background-color: #cccccc;
+height: 500px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+#b1{
+    background-color: blue;
+    color: white;
+}
+#b2{
+    background-color: blue;
+    color: white;
+}
+
+.form .massage{
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+
+.register-form{
+    display: none;
+    text-align: center;
+}
+
+#te-cent{
+    margin: 17vh 30vw;
+}
+
+#sh{
+    margin: 2vh;
+}
+#ra{
+    margin: 2vh;
+    background-color: blue;
+}
+#va{
+    margin-bottom: 4vh;
+    border: 2px solid;
+    background-color: blue;
+    color: white;
+}
+.massage{
+    color: white;
+}
+#tw{
+    margin-top: 25vh;
+}
