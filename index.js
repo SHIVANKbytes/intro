@@ -1,3 +1,10 @@
+document.getElementById('submit').style.border = '2px solid pink'
+document.getElementById('pwd').style.border = '2px solid pink'
+document.getElementById('email').style.border = '2px solid pink'
+document.getElementById('pwd').style.backgroundColor = 'seashell'
+document.getElementById('email').style.backgroundColor = 'seashell'
+document.getElementById('bdy').style.margin = '80px 550px'
+document.getElementById('h2').style.border = '2px #E5E7E9'
 function sendEmail() {
       Email.send({
         Host: "smtp.gmail.com",
@@ -11,15 +18,6 @@ function sendEmail() {
         message => alert(message)
       );
     }
-
-
-document.getElementById('submit').style.border = '2px solid pink'
-document.getElementById('pwd').style.border = '2px solid pink'
-document.getElementById('email').style.border = '2px solid pink'
-document.getElementById('pwd').style.backgroundColor = 'seashell'
-document.getElementById('email').style.backgroundColor = 'seashell'
-document.getElementById('bdy').style.margin = '80px 550px'
-document.getElementById('h2').style.border = '2px #E5E7E9'
 document.getElementById('h2').style.width = '265px'
 document.getElementById('h2').style.backgroundColor = 'RoyalBlue'
 document.getElementById('s1').style.margin = '1px 30px'
