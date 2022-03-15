@@ -290,25 +290,15 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
                     <div class="container contact-form">
-                        <form action="#" method="post" id="email_form contact">
-                            <input type="text" name="extra_name" pattern="[a-zA-Z]+" placeholder="Full Name" required />
-                            <input type="email" name="extra_email" placeholder="Your Email" required />
-                            <input type="text" name="subject" placeholder="Subject" required />
-                            <input type="text" name="extra_phone_number" pattern="[0-9]+" placeholder="Phone Number" />
-                            <textarea name="text" placeholder="Message" required></textarea>
-                            <input type="hidden" name="access_token" value="ff5tw27fsswwdru2pj0h8zle" />
-                            <!-- return urls can be fully qualified -OR-
-                                 start with / for root relative -OR-
-                                 start with . for url relative -->
-                            <input type="hidden" name="success_url"
-                                value=".?message=Email+Successfully+Sent%21&isError=0" />
-                            <input type="hidden" name="error_url"
-                                value=".?message=Email+could+not+be+sent.&isError=1" />
+                        <form onsubmit="sendEmail(); reset(); return false" action="#" method="post" id="email_form contact">
+                            <input type="text" name="extra_name" id="name" pattern="[a-zA-Z]+" placeholder="Full Name" required />
+                            <input type="email" name="extra_email" id="email" placeholder="Your Email" required />
+                            <input type="text" name="subject" id="subject" placeholder="Subject" required />
+                            <input type="number" name="extra_phone_number" id="number" pattern="[0-9]+" placeholder="Phone Number" />
+                            <textarea name="text" id="message" placeholder="Message" required></textarea>
+                            
 
-
-
-
-                            <input id="submit_form" type="submit" value="Send" />
+                            <button id="submit_form" type="submit">Send</button>
                         </form>
                     </div>
 
@@ -506,6 +496,23 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!--SMTP LINK-->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "shivank268@gmail.com",
+        Password: "bundeelgimzbnrds",
+        To: 'shivank2019ec035abesit@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "New Contact Form Enquiry",
+        Body: "And this is the body"
+      }).then(
+        message => alert(message)
+      );
+    }
+  </script>
+
 </body>
 
 </html>
