@@ -18,7 +18,7 @@ function sendEmail() {
             + "<br> Phone Number: " + document.getElementById("number").value
             + "<br> Message: " + document.getElementById("message").value
       }).then(
-        message => alert(message)
+        message => alert("Message Sent Succesfully")
       );
     }
 document.getElementById('h2').style.width = '265px'
