@@ -12,8 +12,11 @@ function sendEmail() {
         Password: "bundeelgimzbnrds",
         To: 'shivank2019ec035abesit@gmail.com',
         From: document.getElementById("email").value,
-        Subject: "New Contact Form Enquiry",
-        Body: "And this is the body"
+        Subject: "Portfolio Message:: Subject: " + document.getElementById("subject").value,
+        Body: "Name: " + document.getElementById("name").value
+        + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone Number: " + document.getElementById("number").value
+            + "<br> Message: " + document.getElementById("message").value
       }).then(
         message => alert(message)
       );
