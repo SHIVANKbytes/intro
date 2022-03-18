@@ -11754,3 +11754,13 @@ input.error {
   border-color: darkred !important;
 }
 
+#submit_form{
+    display: block;
+    margin: auto;
+    color: black;
+    background-color: lightblue;
+  }
+  #number{
+    width: 100%;
+    margin-bottom: 1%;
+  }
