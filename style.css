@@ -11764,3 +11764,12 @@ input.error {
     width: 100%;
     margin-bottom: 1%;
   }
+
+#imageup1{
+    padding-top: 20px;
+    margin: auto;
+  }
+  #imageup2{
+    display: block;
+    margin: auto;
+  }
