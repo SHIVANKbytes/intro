@@ -11766,11 +11766,11 @@ input.error {
   }
 
 #imageup1{
+    float: left;
+    clear: both;
     padding-top: 20px;
     margin: auto;
   }
   .imageup2{
-    display: block;
-    margin: auto;
-    text-align: center;
+    float: right;
   }
