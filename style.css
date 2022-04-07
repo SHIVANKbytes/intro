@@ -11773,4 +11773,5 @@ input.error {
   }
   .imageup2{
     float: right;
+    clear: both;
   }
