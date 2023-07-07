@@ -9,7 +9,7 @@ function sendEmail() {
       Email.send({
         Host: "smtp.gmail.com",
         Username: "shivank268@gmail.com",
-        Password: "bundeelgimzbnrds",
+        Password: "cavrlglvznsgeydt",
         To: 'shivank2019ec035abesit@gmail.com',
         From: document.getElementById("email").value,
         Subject: "Portfolio Message:: Subject: " + document.getElementById("subject").value,
